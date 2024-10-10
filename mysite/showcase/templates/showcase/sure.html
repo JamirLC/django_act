@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"> 
+</head>
+<body>
+    <div class="container mt-5 d-flex align-items-center justify-content-center flex-column">
+        <div class="card d-flex align-items-center justify-content-center flex-column">
+            <div class="card-body">
+                <h5 class="card-title">Are you sure?</h5>
+                <img src="{% static 'sure.png' %}" alt="">
+            </div>
+        </div>
+         <a href="../showcase/ans" class="btn btn-success mt-1">Sure</a>
+        <a href="../showcase/show" class="btn btn-secondary mt-1">Go Back</a>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
